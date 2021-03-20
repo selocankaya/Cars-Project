@@ -202,7 +202,7 @@ header .logo img {
   position: absolute;
 
   left: 0;
-
+  top: 0;
   background-color: rgba(80, 13, 22, 0.7);
   overflow: hidden;
   width: 0;
@@ -227,7 +227,7 @@ header .logo img {
 .engineOverlay2 {
   position: absolute;
   right: 0;
-  /* bottom: 0; */
+  bottom: 0;
   background-color: rgba(80, 13, 22, 0.7);
   overflow: hidden;
   width: 0;
