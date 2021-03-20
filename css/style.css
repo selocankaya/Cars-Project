@@ -200,9 +200,9 @@ header .logo img {
 
 .engineOverlay {
   position: absolute;
-  bottom: 0;
+
   left: 0;
-  right: 0;
+
   background-color: rgba(80, 13, 22, 0.7);
   overflow: hidden;
   width: 0;
@@ -227,7 +227,7 @@ header .logo img {
 .engineOverlay2 {
   position: absolute;
   right: 0;
-  bottom: 0;
+  /* bottom: 0; */
   background-color: rgba(80, 13, 22, 0.7);
   overflow: hidden;
   width: 0;
@@ -433,4 +433,151 @@ h4 {
 .projectXHighlight li {
   color: #fff;
   text-align: center;
+}
+
+/* about settings */
+
+#aboutSlider {
+  height: 500px;
+  background: url('../images/aboutSlider.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+#aboutCaption {
+  height: 500px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#ourHistory {
+  background-color: #f5f5f5;
+}
+
+.ourHistoryTop {
+  text-align: center;
+}
+
+.ourHistoryBody .containerFluid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ourHistoryBody .col2 {
+  display: flex;
+}
+
+.ourHistoryDate {
+  flex: 1;
+  background-color: #500d16;
+  color: #fff;
+  text-align: center;
+}
+
+.ourHistoryDate p {
+  font-size: 30px;
+  letter-spacing: 2px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ourHistoryImage {
+  flex: 2;
+}
+
+.ourHistoryImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.ourHistoryText {
+  flex: 3;
+  margin-left: 10px;
+}
+
+.ourHistoryText p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.TeamTop {
+  text-align: center;
+}
+
+.teamBody .containerFluid {
+  display: flex;
+  width: 100%;
+}
+
+.teamMember {
+  position: relative;
+  width: 100%;
+}
+.teamMemberImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.teamMemberOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-color: #500d16;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.teamMember:hover .teamMemberOverlay {
+  opacity: 0;
+}
+
+.teamMember:hover .teamMemberInfo {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.teamTitle {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.teamMemberInfo {
+  color: #fff;
+  background-color: rgba(80, 13, 22, 0.5);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.MemberSocialLinks {
+  text-align: center;
+}
+
+.MemberSocialLinks li {
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.MemberSocialLinks .fa {
+  color: white;
 }
