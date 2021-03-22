@@ -307,7 +307,7 @@ footer p {
 
 #carsCaption {
   height: 500px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #inspect {
@@ -414,16 +414,13 @@ h4 {
   position: relative;
 }
 .projectXHighlight {
-  position: absolute;
   background-color: #500d16;
   opacity: 0.5;
-  width: 10%;
-  height: 120px;
-  display: block;
-  right: 450px;
-  top: 35%;
-  border-radius: 30px;
-  padding: 10px;
+  display: flex;
+  width: 35%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
 .projectXHighlight:hover {
   opacity: 1;
@@ -691,4 +688,121 @@ h4 {
 }
 .formBtn:hover {
   background: #841916;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 960px) {
+  .caption h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+  .caption p {
+    font-size: 12px;
+  }
+  footer .fa {
+    font-size: 18px;
+  }
+
+  footer h3 {
+    font-size: 12px;
+  }
+  .inspectBody .container {
+    flex-direction: column;
+  }
+  .inspectBody .container .col2 {
+    width: 100%;
+  }
+
+  .ourHistoryBody .col2 {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo {
+    margin: 0 auto;
+  }
+
+  .caption h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  .caption p {
+    font-size: 10px;
+  }
+
+  .featuresBody .container {
+    flex-direction: column;
+  }
+  .featuresBody .container .col3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .engineBody .container {
+    flex-direction: column;
+  }
+  .engineBody .container .col2 {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .col3 {
+    width: 100%;
+  }
+
+  .sectionHeader {
+    font-size: 22px;
+  }
+  .inspectBody .container .col2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .teamMemberInfo {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .teamTitle {
+    font-size: 14px;
+  }
+  .formShape {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .caption h1 {
+    font-size: 30px;
+    letter-spacing: 0px;
+  }
+  .caption p {
+    font-size: 8px;
+  }
+  .featuresBody .container .col3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .engineBody .container .col2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .sectionHeader {
+    font-size: 20px;
+  }
+  .contactForm {
+    width: 80%;
+  }
 }
